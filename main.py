@@ -14,14 +14,14 @@ st.set_page_config(page_title="Boston Marathon", page_icon=":sports_medal:",layo
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 
 # Load the models
-model_lr_5k = joblib.load('models\model_lr_5k.pkl')
-model_lr_20k = joblib.load('models\model_lr_20k.pkl')
-model_lr_35k = joblib.load('models\model_lr_35k.pkl')
+model_lr_5k = joblib.load('models/model_lr_5k.pkl')
+model_lr_20k = joblib.load('models/model_lr_20k.pkl')
+model_lr_35k = joblib.load('models/model_lr_35k.pkl')
 
 # Load the scalers
-scaler_lr_5k = joblib.load('models\scaler_lr_5k.pkl')
-scaler_lr_20k = joblib.load('models\scaler_lr_20k.pkl')
-scaler_lr_35k = joblib.load('models\scaler_lr_35k.pkl')
+scaler_lr_5k = joblib.load('models/scaler_lr_5k.pkl')
+scaler_lr_20k = joblib.load('models/scaler_lr_20k.pkl')
+scaler_lr_35k = joblib.load('models/scaler_lr_35k.pkl')
 
 col0_1, col0_2, col0_3 = st.columns([1, 6, 1])
 
