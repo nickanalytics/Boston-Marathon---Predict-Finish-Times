@@ -176,7 +176,7 @@ def plot_lines():
         else:
             fig.add_trace(go.Scatter(x=df_gender['age'], y=df_gender['avg_pace'], mode='lines', name=gender))
 
-    fig.update_layout(title='Average Pace per Age/Gender',title_x=0.35, xaxis_title='Age', yaxis_title='Average Pace',height=400)
+    fig.update_layout(title='Avg Pace (min/km) Top 15 Males & Females',title_x=0.35, xaxis_title='Age', yaxis_title='Avg Pace (min/km)',height=400)
     st.plotly_chart(fig)
 
 with col2_2:
